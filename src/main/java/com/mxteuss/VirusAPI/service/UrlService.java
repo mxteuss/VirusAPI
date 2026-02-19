@@ -59,13 +59,13 @@ public class UrlService {
                 JsonNode stats = attrs.path("stats");
             if (!stats.equals("completed")) {
                 System.out.println("==================== Relatório VirusTotal ====================");
-                System.out.println("URL analisada : " + attrs.path("url").asText());
+                System.out.println("URL  : " + attrs.path("url").asText());
                 System.out.println("Status        : " + attrs.path("status").asText());
                 System.out.println("--------------------------------------------------------------");
-                System.out.println("✅ Seguro      : " + stats.path("harmless").asInt());
-                System.out.println("🚨 Malicioso   : " + stats.path("malicious").asInt());
-                System.out.println("⚠️  Suspeito    : " + stats.path("suspicious").asInt());
-                System.out.println("❓ Não detectado: " + stats.path("undetected").asInt());
+                System.out.println("✅ Harmless      : " + stats.path("harmless").asInt());
+                System.out.println("🚨 Malicious   : " + stats.path("malicious").asInt());
+                System.out.println("⚠️ Suspicious    : " + stats.path("suspicious").asInt());
+                System.out.println("❓ Undetected: " + stats.path("undetected").asInt());
                 System.out.println("==============================================================");
             }
             }

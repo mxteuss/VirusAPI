@@ -15,7 +15,7 @@ public class VirusApplication {
         UrlService urlService = context.getBean(UrlService.class);
 
         Scanner scanner = new Scanner(System.in);
-        System.out.print("Insira a URL: ");
+        System.out.print("Type the URL: ");
         String url = scanner.nextLine();
 
         urlService.scanURL(url);
