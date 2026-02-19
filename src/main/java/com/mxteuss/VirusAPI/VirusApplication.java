@@ -1,6 +1,6 @@
-package com.mxteuss.VirusAPI.service;
+package com.mxteuss.VirusAPI;
 
-import com.mxteuss.VirusAPI.service.service.UrlService;
+import com.mxteuss.VirusAPI.service.UrlService;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
